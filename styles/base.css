@@ -1,0 +1,67 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a global font for the entire page from Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif; /* Replace with your selected Google Font */
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content area */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the section with the class "card" */
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style links */
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the highlighted text */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Style the copyright paragraph */
+#copyright {
+    font-size: 14px;
+}
+
+/* Style the name and country paragraph */
+#nameAndCountry {
+    font-size: 16px;
+}
