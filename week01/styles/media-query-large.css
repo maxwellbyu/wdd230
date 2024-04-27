@@ -1,0 +1,22 @@
+/* Media query for viewport width of 500px or greater */
+@media screen and (min-width: 500px) {
+
+    /* Update main header styles */
+    main header {
+        text-align: center;
+        /* Center-align the text */
+        background-color: #000000;
+        /* Black background */
+        color: #ffffff;
+        /* White text */
+        padding: 1rem;
+        /* Add padding for better spacing */
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns of equal size */
+    gap: 1rem;
+}

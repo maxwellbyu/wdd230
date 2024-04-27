@@ -1,0 +1,39 @@
+/* Apply Google Font - Roboto to the entire body */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style for header, main, and footer */
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Faint border */
+    padding: 1rem;
+    /* Appropriate padding */
+    background-color: #e6f2ff;
+    /* Blueish background color */
+}
+
+/* Style for main element as a CSS grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* One column */
+    gap: 1rem;
+    /* Equal gap of 1rem */
+}
+
+/* Style for section elements */
+section {
+    padding: 1rem;
+    /* Padding */
+    background-color: #ffffff;
+    /* White background */
+}
+
+/* Example of posing a question */
+/* I have a question about the media-query assignment part 5.1.4.
+     I do not know how to set the main element grid to only one column with an even gap of 1rem. */
