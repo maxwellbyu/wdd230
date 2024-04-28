@@ -53,6 +53,21 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Style the navigation links */
+nav a {
+    color: white;
+    /* Default color */
+    transition: color 0.3s;
+    /* Smooth transition effect */
+}
+
+/* Change the color on hover */
+nav a:hover {
+    color: lightgray;
+    /* New color on hover */
+}
+
+
 
 main {
     padding: 20px;
