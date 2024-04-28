@@ -4,12 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my site</title>
+    <title>Iwe Maxwell Chukwuemeka - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - [Your Full Name] course assignment portal">
+    <meta name="author" content="[Your Full Name]">
+
+    <!-- Link to Google Fonts API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font:400,700&display=swap">
+
+    <!-- Link to base CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Link to larger CSS -->
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
-    <h1>Welcome</h1>
+    <header>
+        <img src="images/profile.jpg" alt="Your Profile Image">
+        <span>Iwe Maxwell Chukwuemeka</span>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <li><a href="#">HTML Basics</a></li>
+            <li><a href="#">CSS Fundamentals</a></li>
+            <li><a href="#">Introduction to JavaScript</a></li>
+            <li><a href="#">Responsive Web Design</a></li>
+            <li><a href="#">CSS Flexbox</a></li>
+            <li><a href="#">CSS Grid</a></li>
+        </section>
+
+        <section class="card" id="informationSection">
+            <h2>Information</h2>
+            <div id="informationContent">
+                <!-- Dynamic content will be generated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Iwe Maxwell Chukwuemeka <Abia>
+                <Nigeria></Nigeria>
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- Reference the JavaScript file -->
+    <script src="scripts/getDates.js"></script>
 </body>
 
 </html>
