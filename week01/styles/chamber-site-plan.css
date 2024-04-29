@@ -1,0 +1,41 @@
+body {
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #336699;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #336699;
+}
+
+ul,
+ol {
+    margin-top: 0;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    color: #888;
+}
