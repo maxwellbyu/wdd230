@@ -1,0 +1,109 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Georgia, serif;
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #336699;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+header p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main styles */
+main {
+    padding: 20px 0;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+}
+
+/* Hero section styles */
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/* Call to action section styles */
+.call-to-action h2 {
+    font-family: Arial, sans-serif;
+    color: #336699;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #FF9900;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #336699;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .development-info {
+    margin-top: 20px;
+}
+
+footer .development-info p {
+    font-size: 0.8rem;
+}
