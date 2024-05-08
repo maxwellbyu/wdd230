@@ -1,0 +1,34 @@
+/* CSS for lazyload.html */
+
+/* Center align the images */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for images */
+main img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    /* Space between images */
+    opacity: 0;
+    /* Initially hide the images */
+}
+
+/* CSS animation for fade from black */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply fade-in animation to images */
+main img {
+    animation: fade-in 1s ease-in-out forwards;
+}
