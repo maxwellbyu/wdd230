@@ -6,4 +6,3 @@ document.addEventListener("DOMContentLoaded", function () {
     var lastModifiedSpan = document.getElementById("lastModified");
     lastModifiedSpan.textContent = lastModified;
 });
-
