@@ -106,8 +106,8 @@ h2 {
 }
 
 .hero img {
-    position: absolute;
-    top: 33%;
+    position: relative;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 100%;
