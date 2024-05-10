@@ -21,6 +21,7 @@ header {
     background-color: #336699;
     color: white;
     padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
@@ -98,6 +99,8 @@ footer h3 {
 
 footer p {
     font-size: 1rem;
+    text-align: center;
+
 }
 
 footer .development-info {
@@ -106,4 +109,32 @@ footer .development-info {
 
 footer .development-info p {
     font-size: 0.8rem;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dividing into two columns */
+    gap: 10px;
+    /* Gap between grid items */
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.image {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
 }
