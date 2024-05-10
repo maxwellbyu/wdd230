@@ -12,3 +12,31 @@ const informationString = `Current Date: ${currentDate}<br>Current Time: ${curre
 
 // Insert the information string into the section
 document.getElementById("informationContent").innerHTML = informationString;
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the information content div
+    var informationContent = document.getElementById("informationContent");
+
+    // Create a paragraph element to display the visit counter
+    var visitCounter = document.createElement("p");
+
+    // Retrieve the visit count from local storage
+    var visitCount = localStorage.getItem("visitCount");
+
+    // Check if visit count exists in local storage
+    if (visitCount) {
+        visitCount = parseInt(visitCount) + 1;
+    } else {
+        visitCount = 1;
+    }
+
+    // Update the visit count in local storage
+    localStorage.setItem("visitCount", visitCount);
+
+    // Set the text content of the visit counter paragraph
+    visitCounter.textContent = "Page visit count: " + visitCount;
+
+    // Append the visit counter to the information content div
+    informationContent.appendChild(visitCounter);
+});
+

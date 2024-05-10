@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="WDD 230 - Web Frontend Development Title">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://maxwellbyu.github.io/wdd230/images/profile.jpg">
+    <meta property="og:image" content="https://maxwellbyu.github.io/wdd230/images/profile.webp">
     <meta property="og:url" content="https://maxwellbyu.github.io/wdd230/index.html">
     <title>Iwe Maxwell Chukwuemeka - WDD 230 - Web Frontend Development</title>
     <meta name="description"
@@ -28,8 +28,8 @@
 
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Your Profile Image">
-        <span>Iwe Maxwell Chukwuemeka</span>
+        <img src="images/profile.webp" alt="Profile image">
+        <span class="name">Iwe Maxwell Chukwuemeka</span>
     </header>
 
     <nav>
@@ -40,48 +40,67 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+    <section>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                    <img src="images/hero-large.webp" alt="Aba Nigeria Temple" width="960" height="480">
+                </picture>
+                <div class="herolabel">
+                    <p>Aba Nigeria Temple</p>
+                </div>
+        </main>
+    </section>
 
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
+    <h1>WDD 230: Web Frontend Development</h1>
 
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <li><a href="#">Week 01</a></li>
-            <a href="https://maxwellbyu.github.io/wdd230/week01/media-query.html" class="btn btn-primary">CSS Layout
-                Review</a> |
-            <a href="https://maxwellbyu.github.io/wdd230/week01/holygrail.html" class="btn btn-primary">CSS Media
-                Queries</a> |
-            <li><a href="#">Week 02: </a></li>
-            <a href="https://codepen.io/Maxwell-Iwe/pen/dyLBrqR" class="btn btn-primary">My Codepen</a> |
-            <a href="https://maxwellbyu.github.io/wdd230/week02/bom.html" class="btn btn-primary">JavaScript: DOM
-                Manipulation</a>
-            <li><a href="#">Week 03</a></li>
-            <a href="https://maxwellbyu.github.io/wdd230/week03/images/landscape.webp" class="btn btn-primary">WebP</a>
-            |
-            <a href="https://maxwellbyu.github.io/wdd230/week03/lazyload.html" class="btn btn-primary">Lazy Loading</a>
-            |
-            <a href="https://maxwellbyu.github.io/wdd230/week03/responsive-images.html"
-                class="btn btn-primary">Responsive Images: srcset</a> |
-            <a href="https://maxwellbyu.github.io/wdd230/week03/bom.html" class="btn btn-primary">Web Storage API -
-                localStorage</a> |
-            <li><a href="#">Week 04</a></li>
-            <li><a href="#">Week 05</a></li>
-            <li><a href="#">Week 06</a></li>
-        </section>
+    <section class="card">
+        <h2>Learning Activities</h2>
+        <li><a href="#">Week 01</a></li>
+        <a href="https://maxwellbyu.github.io/wdd230/week01/media-query.html" class="btn btn-primary">CSS Layout
+            Review</a> |
+        <a href="https://maxwellbyu.github.io/wdd230/week01/holygrail.html" class="btn btn-primary">CSS Media
+            Queries</a> |
+        <li><a href="#">Week 02: </a></li>
+        <a href="https://codepen.io/Maxwell-Iwe/pen/dyLBrqR" class="btn btn-primary">My Codepen</a> |
+        <a href="https://maxwellbyu.github.io/wdd230/week02/bom.html" class="btn btn-primary">JavaScript: DOM
+            Manipulation</a>
+        <li><a href="#">Week 03</a></li>
+        <a href="https://maxwellbyu.github.io/wdd230/week03/images/landscape.webp" class="btn btn-primary">WebP</a>
+        |
+        <a href="https://maxwellbyu.github.io/wdd230/week03/lazyload.html" class="btn btn-primary">Lazy Loading</a>
+        |
+        <a href="https://maxwellbyu.github.io/wdd230/week03/responsive-images.html" class="btn btn-primary">Responsive
+            Images: srcset</a> |
+        <a href="https://maxwellbyu.github.io/wdd230/week03/bom.html" class="btn btn-primary">Web Storage API -
+            localStorage</a> |
+        <li><a href="#">Week 04</a></li>
+        <li><a href="#">Week 05</a></li>
+        <li><a href="#">Week 06</a></li>
+    </section>
 
-        <section class="card" id="informationSection">
-            <h2>Information</h2>
-            <div id="informationContent">
-                <!-- Dynamic content will be generated here -->
-            </div>
-        </section>
+    <section class="card" id="informationSection">
+        <h2>Information</h2>
+        <div id="informationContent">
+            <!-- Dynamic content will be generated here -->
+        </div>
+    </section>
     </main>
+    <div id="map-container">
+        <!-- Paste the <iframe> code provided by Google Maps here -->
+        <iframe
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Lagos%20bye%20pass+(Ihovbor%20Benin%20City%20Nigeria)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> Iwe Maxwell Chukwuemeka <Abia>
                 <Nigeria></Nigeria>
         </p>
         <p id="lastModified"></p>
+
+
     </footer>
 
     <!-- Reference the JavaScript file -->

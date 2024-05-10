@@ -6,16 +6,25 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #4D5B97;
     color: #fff;
     padding: 20px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 header img {
     width: 100px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
+
+span.name {
+    font-size: 40px;
+    /* Adjust the value as needed */
+
+}
+
 
 nav {
     display: flex;
@@ -23,7 +32,7 @@ nav {
     /* Horizontally center the items */
     align-items: center;
     /* Vertically center the items */
-    background-color: #f0f0f0;
+    background-color: #161313;
     /* Just to visualize */
     padding: 10px 0;
     /* Adjust padding as needed */
@@ -49,7 +58,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #333;
+    color: white;
     text-decoration: none;
 }
 
@@ -63,7 +72,7 @@ nav a {
 
 /* Change the color on hover */
 nav a:hover {
-    color: lightgray;
+    color: yellow;
     /* New color on hover */
 }
 
@@ -73,18 +82,83 @@ main {
     padding: 20px;
 }
 
-.card {
-    width: 400px;
-    height: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin: 10px auto;
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    left: 0;
+    right: 0;
+
+
+}
+
+h2 {
+    background-color: #4D5B97;
+    color: white;
     padding: 20px;
 }
 
+
+.hero {
+    position: relative;
+    height: 100vh;
+    /* Adjust as needed */
+
+}
+
+.hero img {
+    position: absolute;
+    top: 32.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+    height: auto;
+
+}
+
+.herolabel {
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    /* Buenas */
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
+}
+
+
+.card {
+    width: 400px;
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px auto;
+    margin: 10px auto;
+    padding: 1px;
+}
+
+/* Define styles for the map container */
+#map-container {
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    /* Center the map horizontally */
+}
+
+
 footer {
-    background-color: #333;
+    background-color: #4D5B97;
     color: #fff;
     text-align: center;
     padding: 10px 0;
