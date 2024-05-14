@@ -37,6 +37,20 @@ header p {
     color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the items */
+    align-items: center;
+    /* Vertically center the items */
+    background-color: #161313;
+    /* Just to visualize */
+    padding: 10px 0;
+    /* Adjust padding as needed */
+    width: 100%;
+    /* Ensure the nav takes full width */
+}
+
 /* Navigation styles */
 nav ul {
     list-style-type: none;
