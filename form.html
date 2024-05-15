@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="WDD 230 - Web Frontend Development Title">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://maxwellbyu.github.io/wdd230/images/profile.webp">
+    <meta property="og:url" content="https://maxwellbyu.github.io/wdd230/index.html">
+    <title>Iwe Maxwell Chukwuemeka - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Iwe Maxwell Chukwuemeka course assignment portal">
+    <meta name="author" content="Iwe Maxwell Chukwuemeka">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+
+    <!-- Link to Google Fonts API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Your+Selected+Font:400,700&display=swap">
+
+    <!-- Link to base CSS -->
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- Link to larger CSS -->
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Profile image">
+        <span class="name">Iwe Maxwell Chukwuemeka</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://maxwellbyu.github.io/wdd230/chamber/index.html">Chamber</a></li>
+            <li><a href="https://maxwellbyu.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+            <h1>Form</h1>
+            <form id="myForm" action="record.html" method="get">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        title="Please enter a valid email address">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Page Rating:</label>
+                    <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+                    <span id="ratingValue">1</span>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
+    <div id="map-container">
+        <!-- Paste the <iframe> code provided by Google Maps here -->
+        <iframe
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Lagos%20bye%20pass+(Ihovbor%20Benin%20City%20Nigeria)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Iwe Maxwell Chukwuemeka <Abia>
+                <Nigeria></Nigeria>
+        </p>
+        <p id="lastModified"></p>
+
+
+    </footer>
+
+    <!-- Reference the JavaScript file -->
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
