@@ -1,4 +1,3 @@
-/* Resetting default styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,13 +6,29 @@
 
 /* Body styles */
 body {
+    margin: 0;
     font-family: Georgia, serif;
 }
 
 /* Container styles */
 .container {
+    justify-content: center;
     width: 90%;
     margin: 0 auto;
+}
+
+.bcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 12 equally sized columns */
+    gap: 10px;
+    /* Optional: Adds space between the columns */
+    padding: 20px;
+
+    /* display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 10px; */
+    /* Optional: Adds space between the columns */
 }
 
 /* Header styles */
@@ -131,10 +146,12 @@ footer .development-info p {
     grid-template-columns: repeat(2, 1fr);
     /* Dividing into two columns */
     gap: 10px;
-    /* Gap between grid items */
+
 }
 
 .sidebar {
+
+
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
@@ -148,7 +165,7 @@ footer .development-info p {
 
 .image img {
     width: 100%;
-    /* Adjust the width as needed */
+
     height: auto;
-    /* Maintain aspect ratio */
+
 }
