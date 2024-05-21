@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Benin City Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://maxwellbyu.github.io/wdd230/chamber/images/profile.jpg">
+    <meta property="og:url" content="https://maxwellbyu.github.io/wdd230/chamber/index.html">
+    <title>Join Us</title>
+    <link rel="icon" href="chamber/images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>The Benin City Chamber of Commerce</h1>
+            <p>Your gateway to economic growth, leadership development, and community empowerment.</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Join Our Organization</h1>
+        <p>Fill out the form below to become a member.</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-container">
+            <form action="thankyou.html" method="get" class="form-section">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="title">Title/Position:</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z-\s]{7,}"
+                    title="Only alpha characters, hyphens, and spaces. Minimum 7 characters.">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+                <label for="phone">Mobile Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="organization-name">Organization Name:</label>
+                <input type="text" id="organization-name" name="organization-name" required>
+
+                <label for="membership-level">Membership Level:</label>
+                <select id="membership-level" name="membership-level">
+                    <option value="NP Membership">NP Membership (No fee)</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+
+                <label for="description">Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <input type="submit" value="Join Now">
+            </form>
+
+            <div class="sidebar">
+                <h2>Membership Levels & Benefits</h2>
+                <ul>
+                    <li><strong>NP Membership:</strong> No fee, basic membership.</li>
+                    <li><strong>Bronze Membership:</strong> Basic benefits, includes access to events.</li>
+                    <li><strong>Silver Membership:</strong> Includes all Bronze benefits, plus additional training.</li>
+                    <li><strong>Gold Membership:</strong> Includes all Silver benefits, plus advertising and spotlight
+                        positions.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Address: 25 Oba Erediawa, Benin City</p>
+                <p>Email: info@beninchamber.com</p>
+                <p>Phone: +234 815 1121782</p>
+            </div>
+            <div class="development-info">
+                <p>Developed by: Iwe Maxwell Chukwuemeka</p>
+                <p>Course: WDD 230</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+
+</body>
+
+</html>
