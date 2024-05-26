@@ -1,19 +1,20 @@
-// Dynamically output current year in footer
-document.getElementById("currentYear").innerText = new Date().getFullYear();
-
-// Dynamically output last modified date in footer
-document.getElementById("lastModified").innerText = "Last Modified: " + document.lastModified;
-// Get the current date and time
-const currentDate = new Date().toLocaleDateString();
-const currentTime = new Date().toLocaleTimeString();
-
-// Construct the information string
-const informationString = `Current Date: ${currentDate}<br>Current Time: ${currentTime}`;
-
-// Insert the information string into the section
-document.getElementById("informationContent").innerHTML = informationString;
-
 document.addEventListener("DOMContentLoaded", function () {
+    // Dynamically output current year in footer
+    document.getElementById("currentYear").innerText = new Date().getFullYear();
+
+    // Dynamically output last modified date in footer
+    document.getElementById("lastModified").innerText = "Last Modified: " + document.lastModified;
+
+    // Get the current date and time
+    const currentDate = new Date().toLocaleDateString();
+    const currentTime = new Date().toLocaleTimeString();
+
+    // Construct the information string
+    const informationString = `Current Date: ${currentDate}<br>Current Time: ${currentTime}`;
+
+    // Insert the information string into the section
+    document.getElementById("informationContent").innerHTML = informationString;
+
     // Get the information content div
     var informationContent = document.getElementById("informationContent");
 
@@ -38,5 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Append the visit counter to the information content div
     informationContent.appendChild(visitCounter);
+
+    // Fetch temperature data from OpenWeatherMap API
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={64c6f0e58fd83e676d52c24cd1691124}";
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Extract temperature from API response
+            const temperature = data.main.temp;
+
+            // Display temperature in HTML element
+            document.getElementById("temperature").innerHTML = "Temperature: " + temperature + " °C";
+        })
+        .catch(error => {
+            console.error('Error fetching temperature data:', error);
+        });
 });
 

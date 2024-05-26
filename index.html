@@ -14,6 +14,7 @@
     <meta name="author" content="Iwe Maxwell Chukwuemeka">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
+    <script src="getDates.js" defer></script>
 
 
     <!-- Link to Google Fonts API -->
@@ -56,6 +57,8 @@
     <h1>WDD 230: Web Frontend Development</h1>
 
     <section class="card">
+        <div class="activity-links"></div>
+
         <h2>Learning Activities</h2>
         <li><a href="#">Week 01</a></li>
         <a href="https://maxwellbyu.github.io/wdd230/week01/media-query.html" class="btn btn-primary">CSS Layout
@@ -77,12 +80,16 @@
             localStorage</a> |
         <li><a href="#">Week 04</a></li>
         <a href="https://https://codepen.io/Maxwell-Iwe/pen/JjqdvBo" class="btn btn-primary">CSS Pseudo-Classes</a> |
-        <a href="https://maxwellbyu.github.io/wdd230/week04/images/css-combination.webp" class="btn btn-primary">CSS
+        <a href="http://127.0.0.1:5500/week04/css-combination.html" class="btn btn-primary">CSS
             Combinators</a> |
+        <a href="http://127.0.0.1:5500/week04/tablebuild.html" class="btn btn-primary">HTML Tables for Data
+            Presentation</a> |
         <a href="https://maxwellbyu.github.io/wdd230/form.html" class="btn btn-primary">Team Activity - Form</a> |
 
         <li><a href="#">Week 05</a></li>
         <a href="https://codepen.io/Maxwell-Iwe/pen/Povzzme" class="btn btn-primary">CSS Pseudo-elements</a> |
+        <a href="https://maxwellbyu.github.io/wdd230/week05/scripts/new-ward-members.json"
+            class="btn btn-primary">JSON</a> |
         <li><a href="#">Week 06</a></li>
     </section>
 
@@ -90,7 +97,21 @@
         <h2>Information</h2>
         <div id="informationContent">
             <!-- Dynamic content will be generated here -->
-        </div>
+            <div class="weather-card">
+                <h2>Weather Information</h2>
+                <div id="weather-info">
+                    <!-- Weather information will be inserted here -->
+                    <h1>Current Temperature</h1>
+
+                    <div id="temperature"></div>
+
+                </div>
+
+
+
+
+
+            </div>
     </section>
     </main>
     <div id="map-container">
@@ -111,6 +132,7 @@
 
     <!-- Reference the JavaScript file -->
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>

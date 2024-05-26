@@ -148,6 +148,16 @@ h2 {
     padding: 1px;
 }
 
+#temperature {
+    /* Your styling here */
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    /* Example color */
+    margin-top: 10px;
+}
+
+
 /* Define styles for the map container */
 #map-container {
     width: 600px;

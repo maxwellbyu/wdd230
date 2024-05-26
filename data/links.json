@@ -1,0 +1,69 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "mQueries"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/responsive-design.html",
+                    "title": "Responsive Design"
+                },
+                {
+                    "url": "week02/flexbox.html",
+                    "title": "Flexbox"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/grid.html",
+                    "title": "CSS Grid"
+                },
+                {
+                    "url": "week03/accessibility.html",
+                    "title": "Accessibility"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "week04/forms.html",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "week04/validation.html",
+                    "title": "Form Validation"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week05/javascript-basics.html",
+                    "title": "JavaScript Basics"
+                },
+                {
+                    "url": "week05/dom-manipulation.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        }
+    ]
+}

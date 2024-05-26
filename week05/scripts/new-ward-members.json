@@ -1,0 +1,28 @@
+{
+    "familyName": "Johnson",
+    "dateMovedIn": "2024-05-01",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "members": [
+        {
+            "name": "John Johnson",
+            "gender": "Male",
+            "birthdate": "1980-04-15"
+        },
+        {
+            "name": "Jane Johnson",
+            "gender": "Female",
+            "birthdate": "1982-06-20"
+        },
+        {
+            "name": "Emily Johnson",
+            "gender": "Female",
+            "birthdate": "2010-09-30"
+        },
+        {
+            "name": "Michael Johnson",
+            "gender": "Male",
+            "birthdate": "2012-11-25"
+        }
+    ]
+}
