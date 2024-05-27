@@ -56,3 +56,58 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const apiKey = '64c6f0e58fd83e676d52c24cd1691124';
+    const city = 'Benin City';
+
+    const weatherElement = document.getElementById('weather');
+    const visitCountElement = document.getElementById('visit-count');
+
+
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+        .then(response => response.json())
+        .then(data => {
+            const temp = data.main.temp;
+            const weather = data.weather[0].description;
+            weatherElement.innerHTML = `Temperature: ${temp}&#8451; <br> Condition: ${weather}`;
+        })
+        .catch(error => {
+            console.error('Error fetching the weather data:', error);
+            weatherElement.innerHTML = 'Unable to retrieve weather information at this time.';
+        });
+
+
+    if (typeof (Storage) !== "undefined") {
+        let visitCount = localStorage.getItem('visitCount');
+        if (visitCount) {
+            visitCount = parseInt(visitCount) + 1;
+        } else {
+            visitCount = 1;
+        }
+        localStorage.setItem('visitCount', visitCount);
+        visitCountElement.innerHTML = `Page Visits: ${visitCount}`;
+    } else {
+        visitCountElement.innerHTML = 'Page visit count is not supported by your browser.';
+    }
+});
+
+
+// scripts.js
+document.getElementById('addLinkButton').addEventListener('click', addLink);
+
+function addLink() {
+    const url = prompt('Enter the URL:');
+    const text = prompt('Enter the link text:');
+
+    if (url && text) {
+        const linkContainer = document.getElementById('linkContainer');
+        const newLink = document.createElement('a');
+        newLink.href = url;
+        newLink.textContent = text;
+        newLink.className = 'dynamic-link';
+        linkContainer.appendChild(newLink);
+    } else {
+        alert('URL and link text are required!');
+    }
+}

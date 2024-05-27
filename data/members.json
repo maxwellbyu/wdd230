@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Company One",
+        "address": "1234 Elm St, Springfield, IL",
+        "phone": "555-1234",
+        "website": "http://companyone.com",
+        "image": "company1.png",
+        "membership": "Gold"
+    },
+    {
+        "name": "Company Two",
+        "address": "5678 Oak St, Shelbyville, IL",
+        "phone": "555-5678",
+        "website": "http://companytwo.com",
+        "image": "company2.png",
+        "membership": "Silver"
+    }
+]

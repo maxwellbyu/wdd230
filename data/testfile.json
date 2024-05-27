@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Company One",
+        "address": "123 Main St, Anytown, USA",
+        "phone": "555-1234",
+        "website": "http://www.companyone.com",
+        "image": "companyone.jpg",
+        "membershipLevel": "Gold",
+        "description": "Leading provider of widgets and gadgets."
+    },
+    {
+        "name": "Company Two",
+        "address": "456 Elm St, Othertown, USA",
+        "phone": "555-5678",
+        "website": "http://www.companytwo.com",
+        "image": "companytwo.jpg",
+        "membershipLevel": "Silver",
+        "description": "Experts in software solutions."
+    },
+    {
+        "name": "Company Three",
+        "address": "789 Oak St, Sometown, USA",
+        "phone": "555-9101",
+        "website": "http://www.companythree.com",
+        "image": "companythree.jpg",
+        "membershipLevel": "Bronze",
+        "description": "Providers of high-quality services."
+    }
+]

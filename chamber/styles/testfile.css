@@ -1,0 +1,28 @@
+#directory-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.grid-view .member-card {
+    flex: 1 1 calc(33.333% - 1rem);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.list-view .member-card {
+    flex: 1 1 100%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#view-toggle {
+    margin-bottom: 1rem;
+}
