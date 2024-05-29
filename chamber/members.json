@@ -1,0 +1,58 @@
+[
+    {
+        "name": "IDWEB ltd",
+        "address": "23 Main St, Benin, Nig",
+        "phone": "0802-706-2234",
+        "website": "http://www.idweb.com.ng",
+        "image": "icon1.webp",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Surge Co Ltd",
+        "address": "4 Elm St, Benin, Nig",
+        "phone": "0803-706-8097",
+        "website": "http://www.surge.com.ng",
+        "image": "icon2.webp",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Graphic Zen Ltd",
+        "address": "7 Ibe St, Benin, Nig",
+        "phone": "0903-374-6112",
+        "website": "http://www.graphicz.com.ng",
+        "image": "icon3.webp",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "PepperShock",
+        "address": "89 Uselu St, Benin, Nig",
+        "phone": "0802-770-8032",
+        "website": "http://www.peppersh.com.ng",
+        "image": "icon4.webp",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "Flash Tech Ent.",
+        "address": "71 UAE St, Benin, Nig",
+        "phone": "0703-237-9012",
+        "website": "http://www.flash.com.ng",
+        "image": "icon5.webp",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "Metro C Ltd",
+        "address": "789 Oak St, Benin, Nig",
+        "phone": "0815-1121-901",
+        "website": "http://www.metro.com.ng",
+        "image": "icon6.webp",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "name": "Goldiva Aesthetic SPA",
+        "address": "3B Emovon Crescent, off Ihama, GRA, Benin city, Edo State,Nigeria.",
+        "phone": "0813-304-9012",
+        "website": "http://www.goldiv.com.ng",
+        "image": "icon7.webp",
+        "membershipLevel": "Bronze"
+    }
+]

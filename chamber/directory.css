@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    align-items: center;
+    /* margin-left: 30px; */
+}
+
+/* Container styles */
+.container {
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 12 equally sized columns */
+    gap: 10px;
+    /* Optional: Adds space between the columns */
+    padding: 20px;
+
+    /* display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 10px; */
+    /* Optional: Adds space between the columns */
+}
+
+/* Header styles */
+header {
+    background-color: #336699;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+header p {
+    font-size: 1.1rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    /* justify-content: center; */
+    /* Horizontally center the items */
+    /* align-items: center; */
+    /* Vertically center the items */
+    background-color: #161313;
+    /* Just to visualize */
+    padding: 10px 0;
+    /* Adjust padding as needed */
+    width: 100%;
+    /* Ensure the nav takes full width */
+
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* Main styles */
+main {
+    max-width: 800px;
+    /* Adjust this value as needed */
+    margin: 0 auto;
+    padding: 20px;
+    /* Optional, for better spacing inside the main */
+    /* padding: 0px 0; */
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+}
+
+
+#member-directory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.list-view #member-directory {
+    flex-direction: column;
+}
+
+.list-view .member-card {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.list-view .member-card img {
+    margin-right: 20px;
+    max-width: 100px;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #336699;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+footer .development-info {
+    margin-top: 20px;
+}
+
+footer .development-info p {
+    font-size: 0.8rem;
+}

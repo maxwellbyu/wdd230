@@ -1,28 +1,28 @@
 {
-    "familyName": "Johnson",
-    "dateMovedIn": "2024-05-01",
-    "numberOfPeople": 4,
-    "visitedByBishopric": true,
-    "members": [
+    "family_name": "Smith",
+    "move_in_date": "2024-05-01",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
         {
-            "name": "John Johnson",
-            "gender": "Male",
-            "birthdate": "1980-04-15"
+            "name": "John Smith",
+            "gender": "male",
+            "birthdate": "1990-03-15"
         },
         {
-            "name": "Jane Johnson",
-            "gender": "Female",
-            "birthdate": "1982-06-20"
+            "name": "Jane Smith",
+            "gender": "female",
+            "birthdate": "1992-07-20"
         },
         {
-            "name": "Emily Johnson",
-            "gender": "Female",
-            "birthdate": "2010-09-30"
+            "name": "Tom Smith",
+            "gender": "male",
+            "birthdate": "2010-11-10"
         },
         {
-            "name": "Michael Johnson",
-            "gender": "Male",
-            "birthdate": "2012-11-25"
+            "name": "Emily Smith",
+            "gender": "female",
+            "birthdate": "2015-09-05"
         }
     ]
 }
