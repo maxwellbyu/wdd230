@@ -59,6 +59,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const apiKey = '64c6f0e58fd83e676d52c24cd1691124'; // Replace with your actual API key
+    const city = 'Benin City'; // Replace with the desired city
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const weatherContent = document.getElementById('weather-content');
+            if (data.cod === 200) {
+                const temperature = data.main.temp;
+                const weatherDescription = data.weather[0].description;
+                const cityName = data.name;
+                weatherContent.innerHTML = `The weather in ${cityName} is currently ${weatherDescription} with a temperature of ${temperature}°C.`;
+            } else {
+                weatherContent.innerHTML = 'Weather information could not be retrieved.';
+            }
+        })
+        .catch(error => {
+            const weatherContent = document.getElementById('weather-content');
+            weatherContent.innerHTML = 'An error occurred while fetching weather information.';
+            console.error('Error fetching weather data:', error);
+        });
+});
+
+
+
+
+
+
 
 
 

@@ -109,6 +109,7 @@ h2 {
     position: relative;
     top: 35%;
     left: 50%;
+    
     transform: translate(-50%, -50%);
     max-width: 100%;
     /* Ensure the image doesn't exceed its container */
@@ -119,7 +120,7 @@ h2 {
 .herolabel {
     position: absolute;
     top: 70px;
-    left: 130px;
+    left: 170px;
     background: radial-gradient(#fff, #4D5B97);
     border: 1px solid rgba(0, 0, 0, .75);
     padding: 1.5rem;

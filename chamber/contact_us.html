@@ -38,36 +38,34 @@
     </nav>
 
     <main>
+        <header>
+            <h1>Contact Us</h1>
+            <p>Fill out the form below to get in touch with us.</p>
+        </header>
+    
         <div class="container">
-            <section class="hero">
-                <img src="images/hero-large.webp" alt="Hero Image">
-            </section>
-            <section class="call-to-action">
-                <h2>Join the Benin Chamber of Commerce</h2>
-                <a href="join.html" class="cta-button">Join Now</a>
-            </section>
-            <section class="current-events">
-                <h2>Current Events</h2>
-                <h2>Economic Development Workshop</h2>
-        <p><strong>Date:</strong> June 25, 2024</p>
-        <p><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
-        <p><strong>Location:</strong> Chamber of Commerce Meeting Hall</p>
-        <p><strong>Description:</strong> A workshop focused on local economic development initiatives, grant opportunities, and strategies for business growth. Presentations by economic development experts and city officials.</p>
-                <!-- <p>Placeholder content for current events...</p> -->
-            </section>
-            <section class="weather-card">
-                <h2>Weather</h2>
-                <p id="weather-content">Loading weather information...</p>
-                <!-- <p>Placeholder content for weather...</p> -->
-            </section>
-            <section class="spotlights">
-                <h2>Spotlights</h2>
-                <h2>Business Spotlight: Local Bakery</h2>
-        <img src="images/sweet_treats.webp" alt="Sweet Treats Bakery" />
-        <p>Sweet Treats Bakery has been serving the community with delicious pastries, cakes, and bread for over 15 years. Known for their friendly service and high-quality ingredients, this family-owned business has become a local favorite. Visit their store at 45 Egwu Street or check out their website at <a href="http://sweettreats.com">sweettreats.com</a> for more information.</p>
-    </section>
-            </section>
+            <div class="grid-container">
+                <form action="response.html" method="get" class="form-section">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+    
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+    
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+    
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
         </div>
+        <script src="scripts/contact.js"></script>
         
     </main>
 
@@ -92,3 +90,4 @@
 </body>
 
 </html>
+
